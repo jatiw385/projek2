@@ -5,7 +5,7 @@ body{
 }
 
 .quest{
-    display: none;
+    display:none;
     font-size: 128px;
     text-align: center;
     color: white;
@@ -22,6 +22,7 @@ body{
     gap: 64px;
     justify-content: center;
     margin-top: 20px;
+    
 } 
 .answer div{
     text-align: center;
@@ -35,7 +36,6 @@ body{
     color: white;
     font-size: 48px;
     font-weight: bold;
-    
 }
 
 .answer div:hover{
@@ -66,7 +66,7 @@ body{
     cursor: pointer;
 }
 .start{
-    display:flex;
+    display:block;
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -90,4 +90,33 @@ body{
     font-family: sans-serif;
     font-weight: bold;
     margin-bottom: 32px;
+}
+
+@media (max-width :600px ){
+    .start button{
+        width: 180px;
+        height: 80px;
+        font-size: 30px;
+    }
+    .start h1{
+        font-size: 30px;
+    }
+    .quest{
+        font-size: 60px;
+    }
+    .answer div{
+        font-size: 20px;
+        height: 60px;
+    }
+    .answer{
+        gap: 20px;
+    }
+    .result h1{
+        font-size: 20px;
+    }
+    .result button{
+        width:170px;
+        height:80px;
+        font-size: 24px;
+    }
 }
