@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #5A827E ;
+}
+
+.quest{
+    display: none;
+    font-size: 128px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.container{
+    height: 100vh;
+    align-content: center;
+    
+}
+.answer{
+    font-size: 30px;
+    display:none;
+    gap: 64px;
+    justify-content: center;
+    margin-top: 20px;
+} 
+.answer div{
+    text-align: center;
+    align-content: center;
+    border: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    cursor:pointer;
+    background-color: #84AE92;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    
+}
+
+.answer div:hover{
+    background-color: #03A9F4;
+}
+.result{
+    display:none;
+    justify-content: center;
+    text-align: center;
+    
+}
+.result h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.result button{
+    width:380px;
+    height:100px;
+    background-color: #84AE92;
+    border-radius: 25px;
+    border: none;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.start{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.start button{
+    background-color: #84AE92;
+  color: white;
+  border: none;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 25px;
+  width: 229px;
+  height: 108px;
+  margin: auto;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.start h1{
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
