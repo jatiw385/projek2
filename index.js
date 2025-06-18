@@ -11,7 +11,6 @@ let quest_a =  getRndInteger(1, 100)
 let quest_b =  getRndInteger(1, 100)
 
 let num;
-
 let count_quest = 0;
 let count_correct = 0;
 for (let i = 0; i< answer.length; i++) {
@@ -72,12 +71,17 @@ setQuest()
 let result = document.querySelector('.result')
 let textresult = document.querySelector('.result h1')
 function startquest(){
+    count_quest = 0;
+    count_correct = 0;
     setTimeout(function(){
         document.querySelector('.answer').style.display = 'none'
         quest.style.display = 'none'
         result.style.display = 'block'
-        textresult.innerHTML = `Berhasil menjawab benar ${count_correct} soal, dengan akurasi ${count_quest/count_quest}%`
+        textresult.innerHTML = `Berhasil menjawab benar ${count_correct} soal, dengan akurasi ${count_quest/count_correct*100}%`
+        let new_cokie = `hight_score=${count_quest}/${count_correct};max-age=1000000`
+        document.cookie = new_cokie
     }, 10000)
+
     
 }
 
